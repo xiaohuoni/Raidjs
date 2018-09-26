@@ -269,7 +269,8 @@ type的有效值：
 <div id="picker"></div>
 
 ####    Picker  滚动选择器
-普通选择器：mode = selector
+##### 普通选择器：mode = selector
+
 |属性     | 类型|默认值|说明|
 |-------- | ---|---|------|
 |range|	Array / Object Array|	[]|	mode为 selector 或 multiSelector 时，range 有效	|
