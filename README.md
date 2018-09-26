@@ -192,33 +192,33 @@ bindreset|	EventHandle	|表单重置时会触发 reset 事件
 <div id="input"></div>
 
 #### Input 输入框
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-value	|String	||	输入框的初始内容
-type	|String|	"text"|	input 的类型
-rule	|String|	|	正则表达式
-isTrue|Boolean||表单验证通过，需要绑定一个属性
-grounp|String||分组
-placeholder	|String	||	输入框为空时占位符
-placeholder-style	|String||		指定 placeholder 的样式
-placeholder-class	|String	|"input-placeholder"|	指定 placeholder 的样式类
-disabled	|Boolean|	false	|是否禁用
-maxlength	|Number	|140|	最大输入长度，设置为 -1 的时候不限制最大长度
-minlength	|Number	||	最小输入长度，最小值为1
-adjust-position|	Boolean|	true|	键盘弹起时，是否自动上推页面
-bindinput|	EventHandle	||	当键盘输入时，触发input事件，event.detail = {value, cursor}，处理函数可以直接 return 一个字符串，将替换输入框的内容。	
-bindfocus|	EventHandle	||	输入框聚焦时触发，event.detail = { value, height }，height 参数在基础库 1.9.90 起支持	
-bindblur	|EventHandle||		输入框失去焦点时触发，event.detail = {value: value}	
-bindconfirm|	EventHandle	||	点击完成按钮时触发，event.detail = {value: value}
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|value	|String	||	输入框的初始内容|
+|type	|String|	"text"|	input 的类型|
+|rule	|String|	|	正则表达式|
+|isTrue|Boolean||表单验证通过，需要绑定一个属性|
+|grounp|String||分组|
+|placeholder	|String	||	输入框为空时占位符|
+|placeholder-style	|String||		指定 placeholder 的样式|
+|placeholder-class	|String	|"input-placeholder"|	指定 placeholder 的样式类|
+|disabled	|Boolean|	false	|是否禁用|
+|maxlength	|Number	|140|	最大输入长度，设置为 -1 的时候不限制最大长度|
+|minlength	|Number	||	最小输入长度，最小值为1|
+|adjust-position|	Boolean|	true|	键盘弹起时，是否自动上推页面|
+|bindinput|	EventHandle	||	当键盘输入时，触发input事件，event.detail = {value, cursor}，处理函数可以直接 return 一个字符串，将替换输入框的内容。	|
+|bindfocus|	EventHandle	||	输入框聚焦时触发，event.detail = { value, height }，height 参数在基础库 1.9.90 起支持	|
+|bindblur	|EventHandle||		输入框失去焦点时触发，event.detail = {value: value}	|
+|bindconfirm|	EventHandle	||	点击完成按钮时触发，event.detail = {value: value}|
 type的有效值：
-值   |说明|
--------- |------|
-email|邮箱
-phone|手机号码
-pullname|中文姓名
-password|密码
-idcard|身份证
-number|数字
+|值   |说明|
+|-------- |------|
+|email|邮箱|
+|phone|手机号码|
+|pullname|中文姓名|
+|password|密码|
+|idcard|身份证|
+|number|数字|
 ##### 实例：
 ```js
 未实现
@@ -229,16 +229,16 @@ number|数字
 <div id="checkbok"></div>
 
 #### CheckbokGroup 多项选择器
-属性     | 类型|说明|
--------- | ---|------|
-bindchange	|EventHandle|选中项发生改变时触发 change 事件，detail = {value:[选中的checkbox的value的数组]}		
+|属性     | 类型|说明|
+|-------- | ---|------|
+|bindchange	|EventHandle|选中项发生改变时触发 change 事件，detail = {value:[选中的checkbox的value的数组]}	|	
 ##### Checkbox 多选项目
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-value	|String		||Checkbox标识，选中时触发CheckboxGroup的 change 事件，并携带 checkbox 的 value
-disabled|	Boolean|	false|	是否禁用
-checked	|Boolean|	false	|当前是否选中，可用来设置默认选中
-color|	Color	|	|Checkbox的颜色，同css的color		
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|value	|String		||Checkbox标识，选中时触发CheckboxGroup的 change 事件，并携带 checkbox 的 value|
+|disabled|	Boolean|	false|	是否禁用|
+|checked	|Boolean|	false	|当前是否选中，可用来设置默认选中|
+|color|	Color	|	|Checkbox的颜色，同css的color		|
 ##### 实例：
 ```js
 未实现
@@ -248,16 +248,16 @@ color|	Color	|	|Checkbox的颜色，同css的color
 <div id="radio"></div>
 
 #### RadioGroup 单项选择器
-属性     | 类型|说明|
--------- | ---|------|
-bindchange|	EventHandle	|	RadioGroup 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项radio的value}
+|属性     | 类型|说明|
+|-------- | ---|------|
+|bindchange|	EventHandle	|	RadioGroup 中的选中项发生变化时触发 change 事件，event.detail = {value: 选中项radio的value}|
 ##### Radio 单选项目
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-value	|String	||	Radio 标识。当该Radio 选中时，RadioGroup 的 change 事件会携带Radio的value
-checked	|Boolean|	false|	当前是否选中
-disabled	|Boolean|	false|	是否禁用
-color	|Color	|	|radio的颜色，同css的color
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|value	|String	||	Radio 标识。当该Radio 选中时，RadioGroup 的 change 事件会携带Radio的value|
+|checked	|Boolean|	false|	当前是否选中|
+|disabled	|Boolean|	false|	是否禁用|
+|color	|Color	|	|radio的颜色，同css的color|
 
 ##### 实例：
 ```js
@@ -270,49 +270,49 @@ color	|Color	|	|radio的颜色，同css的color
 
 ####    Picker  滚动选择器
 普通选择器：mode = selector
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-range|	Array / Object Array|	[]|	mode为 selector 或 multiSelector 时，range 有效	
-range-key	|String	||	当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容	
-value	|Number|	0	|value 的值表示选择了 range 中的第几个（下标从 0 开始）	
-bindchange	|EventHandle||		value 改变时触发 change 事件，event.detail = {value: value}	
-disabled|	Boolean|	false	|是否禁用	
-bindcancel|	EventHandle	||	取消选择或点遮罩层收起 picker 时触发
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|range|	Array / Object Array|	[]|	mode为 selector 或 multiSelector 时，range 有效	|
+|range-key	|String	||	当 range 是一个 Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容	|
+|value	|Number|	0	|value 的值表示选择了 range 中的第几个（下标从 0 开始）	|
+|bindchange	|EventHandle||		value 改变时触发 change 事件，event.detail = {value: value}	|
+|disabled|	Boolean|	false	|是否禁用	|
+|bindcancel|	EventHandle	||	取消选择或点遮罩层收起 picker 时触发|
 多列选择器：mode = multiSelector
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-range	|二维Array / 二维Object Array|	[]|	mode为 selector 或 multiSelector 时，range 有效。二维数组，长度表示多少列，数组的每项表示每列的数据，如[["a","b"], ["c","d"]]	
-range-key|	String||		当 range 是一个 二维Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容	
-value	|Array|	[]	|value 每一项的值表示选择了 range 对应项中的第几个（下标从 0 开始）	
-bindchange	|EventHandle||		value 改变时触发 change 事件，event.detail = {value: value}	
-bindcolumnchange|	EventHandle	||	某一列的值改变时触发 columnchange 事件，event.detail = {column: column, value: value}，column 的值表示改变了第几列（下标从0开始），value 的值表示变更值的下标	
-bindcancel|	EventHandle	||	取消选择时触发	
-disabled|	Boolean	|false|	是否禁用
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|range	|二维Array / 二维Object Array|	[]|	mode为 selector 或 multiSelector 时，range 有效。二维数组，长度表示多少列，数组的每项表示每列的数据，如[["a","b"], ["c","d"]]	|
+|range-key|	String||		当 range 是一个 二维Object Array 时，通过 range-key 来指定 Object 中 key 的值作为选择器显示内容|	
+|value	|Array|	[]	|value 每一项的值表示选择了 range 对应项中的第几个（下标从 0 开始）	|
+|bindchange	|EventHandle||		value 改变时触发 change 事件，event.detail = {value: value}	|
+|bindcolumnchange|	EventHandle	||	某一列的值改变时触发 columnchange 事件，event.detail = {column: column, value: value}，column 的值表示改变了第几列（下标从0开始），value 的值表示变更值的下标	|
+|bindcancel|	EventHandle	||	取消选择时触发	|
+|disabled|	Boolean	|false|	是否禁用|
 日期选择器：mode = date
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-value	|String	|0	|表示选中的日期，格式为"YYYY-MM-DD"	
-start	|String	||	表示有效日期范围的开始，字符串格式为"YYYY-MM-DD"	
-end	|String	||	表示有效日期范围的结束，字符串格式为"YYYY-MM-DD"	
-fields|	String|	day|	有效值 year,month,day，表示选择器的粒度	
-bindchange	|EventHandle||		value 改变时触发 change 事件，event.detail = {value: value}	
-bindcancel	|EventHandle||		取消选择时触发	
-disabled|	Boolean|	false|	是否禁用
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|value	|String	|0	|表示选中的日期，格式为"YYYY-MM-DD"	|
+|start	|String	||	表示有效日期范围的开始，字符串格式为"YYYY-MM-DD"	|
+|end	|String	||	表示有效日期范围的结束，字符串格式为"YYYY-MM-DD"	|
+|fields|	String|	day|	有效值 year,month,day，表示选择器的粒度	|
+|bindchange	|EventHandle||		value 改变时触发 change 事件，event.detail = {value: value}	|
+|bindcancel	|EventHandle||		取消选择时触发	|
+|disabled|	Boolean|	false|	是否禁用|
 fields 有效值：
-值     | 说明|
--------- |------|
-year|	选择器粒度为年
-month	|选择器粒度为月份
-day|	选择器粒度为天
+|值     | 说明|
+|-------- |------|
+|year|	选择器粒度为年|
+|month	|选择器粒度为月份|
+|day|	选择器粒度为天|
 省市区选择器：mode = region
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-value	|Array|	[]	|表示选中的省市区，默认选中每一列的第一个值	
-custom-item	|String|		可为每一列的顶部添加一个自定义的项	1.5.0
-bindchange|	EventHandle	|	|value 改变时触发 change 事件，event.detail = {value: value}	
-bindcancel|	EventHandle	||	取消选择时触发	
-disabled	|Boolean|	false|	是否禁用
-type|String||province city
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|value	|Array|	[]	|表示选中的省市区，默认选中每一列的第一个值	|
+|custom-item	|String|		可为每一列的顶部添加一个自定义的项	1.5.0|
+|bindchange|	EventHandle	|	|value 改变时触发 change 事件，event.detail = {value: value}|	
+|bindcancel|	EventHandle	||	取消选择时触发	|
+|disabled	|Boolean|	false|	是否禁用|
+|type|String||province city|
 ##### 实例：
 ```js
 未实现
@@ -323,9 +323,9 @@ type|String||province city
 <div id="slider"></div>
 
 #### Slider 滑动选择器
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-未设计||||
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|未设计||||
 
 ##### 实例：
 ```js
@@ -343,9 +343,9 @@ for优先级高于内部控件，内部有多个控件的时候默认触发第�
 
 目前可以绑定的控件有：Button, Checkbox, Radio, Switch
 
-属性     | 类型|说明|
--------- | ---|------|
-for	|String	|绑定控件的 id
+|属性     | 类型|说明|
+|-------- | ---|------|
+|for	|String	|绑定控件的 id|
 
 ##### 实例：
 ```js
@@ -357,12 +357,12 @@ for	|String	|绑定控件的 id
 <div id="switch"></div>
 
 #### Switch 开关选择器
-属性     | 类型|默认值|说明|
--------- | ---| ---|------|
-checked	|Boolean|	false|	是否选中
-type	|String	|switch	|样式，有效值：switch, checkbox
-bindchange|	EventHandle	|	|checked 改变时触发 change 事件，event.detail={ value:checked}
-color	|Color	||	switch 的颜色，同 css 的 color
+|属性     | 类型|默认值|说明|
+|-------- | ---| ---|------|
+|checked	|Boolean|	false|	是否选中
+|type	|String	|switch	|样式，有效值：switch, checkbox
+|bindchange|	EventHandle	|	|checked 改变时触发 change 事件，event.detail={ value:checked}
+|color	|Color	||	switch 的颜色，同 css 的 color
 
 ##### 实例：
 ```js
@@ -375,10 +375,10 @@ color	|Color	||	switch 的颜色，同 css 的 color
 <div id="roouter"></div>
 
 #### Router 页面链接
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-url|	String	||	应用内的跳转链接
-data|Object|{}|跳转携带参数
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|url|	String	||	应用内的跳转链接|
+|data|Object|{}|跳转携带参数|
 
 ##### 实例：
 ```js
@@ -390,9 +390,9 @@ data|Object|{}|跳转携带参数
 <div id="another"></div>
 
 #### Another 页面内定位
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-href|	String	||	当前页面定位，对应id
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|href|	String	||	当前页面定位，对应id|
 
 
 ##### 实例：
@@ -411,30 +411,30 @@ href|	String	||	当前页面定位，对应id
 <div id="image"></div>
 
 #### Image 图片
-属性     | 类型|默认值|说明|
--------- | ---|---|------|
-src	|String	|	|图片资源地址	
-mode	|String||	'scaleToFill'	图片裁剪、缩放的模式	
-lazy-load	|Boolean|	false	|图片懒加载。只针对page与scroll-view下的image有效
-binderror	|HandleEvent|	|	当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}	
-bindload	|HandleEvent||		当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}
+|属性     | 类型|默认值|说明|
+|-------- | ---|---|------|
+|src	|String	|	|图片资源地址	|
+|mode	|String||	'scaleToFill'	图片裁剪、缩放的模式	|
+|lazy-load	|Boolean|	false	|图片懒加载。只针对page与scroll-view下的image有效|
+|binderror	|HandleEvent|	|	当错误发生时，发布到 AppService 的事件名，事件对象event.detail = {errMsg: 'something wrong'}|	
+|bindload	|HandleEvent||		当图片载入完毕时，发布到 AppService 的事件名，事件对象event.detail = {height:'图片高度px', width:'图片宽度px'}|
 mode 有效值：
 mode 有 13 种模式，其中 4 种是缩放模式，9 种是裁剪模式。
-模式     | 值|说明|
--------- | ---|------|
-缩放|	scaleToFill	|不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素
-缩放|	aspectFit	|保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。
-缩放	|aspectFill|	保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。
-缩放	|widthFix|	宽度不变，高度自动变化，保持原图宽高比不变
-裁剪|	top	|不缩放图片，只显示图片的顶部区域
-裁剪|	bottom|	不缩放图片，只显示图片的底部区域
-裁剪	|center|	不缩放图片，只显示图片的中间区域
-裁剪	|left	|不缩放图片，只显示图片的左边区域
-裁剪	|right|	不缩放图片，只显示图片的右边区域
-裁剪|	top left|	不缩放图片，只显示图片的左上边区域
-裁剪|	top right|	不缩放图片，只显示图片的右上边区域
-裁剪|	bottom left	|不缩放图片，只显示图片的左下边区域
-裁剪	|bottom right|	不缩放图片，只显示图片的右下边区域
+|模式     | 值|说明|
+|-------- | ---|------|
+|缩放|	scaleToFill	|不保持纵横比缩放图片，使图片的宽高完全拉伸至填满 image 元素|
+|缩放|	aspectFit	|保持纵横比缩放图片，使图片的长边能完全显示出来。也就是说，可以完整地将图片显示出来。|
+|缩放	|aspectFill|	保持纵横比缩放图片，只保证图片的短边能完全显示出来。也就是说，图片通常只在水平或垂直方向是完整的，另一个方向将会发生截取。|
+|缩放	|widthFix|	宽度不变，高度自动变化，保持原图宽高比不变|
+|裁剪|	top	|不缩放图片，只显示图片的顶部区域|
+|裁剪|	bottom|	不缩放图片，只显示图片的底部区域|
+|裁剪	|center|	不缩放图片，只显示图片的中间区域|
+|裁剪	|left	|不缩放图片，只显示图片的左边区域|
+|裁剪	|right|	不缩放图片，只显示图片的右边区域|
+|裁剪|	top left|	不缩放图片，只显示图片的左上边区域|
+|裁剪|	top right|	不缩放图片，只显示图片的右上边区域|
+|裁剪|	bottom left	|不缩放图片，只显示图片的左下边区域|
+|裁剪	|bottom right|	不缩放图片，只显示图片的右下边区域|
 ##### 实例：
 ```html
 未实现
